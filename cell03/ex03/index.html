@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="todo.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, #ft_list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        button{
+            margin: 20px;
+            padding: 8px;
+            width: 40%;
+            cursor: pointer;
+        }
+
+        #ft_list{
+            margin-top: 5vh;
+            padding: 24px;
+            width: 50%;
+            border: 0.3rem solid black;
+        }
+    </style>
+    <title>Todo</title>
+</head>
+<body>
+    <div id="ft_list">
+        <h1>TODO LIST</h1>
+        <button id="createNew">New</button>
+    </div>
+</body>
+</html>
