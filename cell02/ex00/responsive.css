@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    box-sizing: content-box;
+}
+.table{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.first-cell{
+    background-color: greenyellow;
+    width: 50%;
+}
+.second-cell{
+    width: 50%;
+    background-color: bisque;
+}

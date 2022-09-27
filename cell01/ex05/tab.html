@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .table{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .cell{
+            width: 50vw;
+            background-color: black;
+            outline: 1px solid red
+        }
+        #first-cell{
+            background-color: greenyellow;
+        }
+        #second-cell{
+            background-color: bisque;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="table">
+        <div id="first-cell" class="cell">First cell</div>
+        <div class="cell">abc</div>
+        <div class="cell">abc</div>
+        <div class="cell">abc</div>
+        <div class="cell">abc</div>
+        <div class="cell">abc</div>
+        <div class="second-cell cell">Second cell</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.para-text{
+    padding: 2rem;
+    background-color: azure;
+}
+
+#para1{
+    background-image: url("./photo1.jpeg");
+}
+
+#para2{
+    background-image: url("./photo2.jpeg");
+}
+
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 30vh;
+}
+
+.text p{
+    color: white;
+    text-align: center;
+}
