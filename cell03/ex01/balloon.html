@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="balloon.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div onclick="increaseBa()"  onmouseleave="decreaseBa()" id="balloon"></div>
+    <div onclick="increaseBa(), changeColor()"  onmouseleave="decreaseBa()" id="balloon"></div>
 </body>
+
 <script>
     const balloon = document.getElementById("balloon");
+    const balloonStyle = getComputedStyle(balloon)
 
     function increaseBa(){
         let currHeight = balloon.offsetHeight;
@@ -24,6 +27,22 @@
             balloon.style.height = 200 + "px"
             balloon.style.width = 200 + "px"
         }
+    }
+
+    function changeColor(){
+        let balloonColor = balloonStyle.backgroundColor;
+
+        switch (balloonColor){
+            case 'rgb(255, 0, 0)':
+                balloon.style.backgroundColor = 'green';
+                break;
+            case 'rgb(0, 128, 0)':
+                balloon.style.backgroundColor = 'blue';
+                break;
+            case 'rgb(0, 0, 255)':
+                balloon.style.backgroundColor = 'red';
+                break;
+            }
     }
 
     function decreaseBa(){
