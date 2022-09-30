@@ -1,5 +1,4 @@
 const listContainer = document.getElementById("ft_list");
-var taskArr = [];
 
 function newElement(){
     //promt
@@ -26,7 +25,7 @@ function createTask(todoText){
 }
 
 function saveTodos(){
-    const savedTodo = JSON.parse(localStorage.getItem("todos")) || [];
+    const savedTodo = JSON.parse(localStorage.getItem("todoItem")) || [];
     for (const element of listContainer.children){
         savedTodo.push(element.textContent);
     }
