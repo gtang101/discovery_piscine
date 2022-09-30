@@ -25,7 +25,7 @@ function createTask(todoText){
 }
 
 function saveTodos(){
-    const savedTodo = JSON.parse(localStorage.getItem("todoItem")) || [];
+    const savedTodo = [];
     for (const element of listContainer.children){
         savedTodo.push(element.textContent);
     }
